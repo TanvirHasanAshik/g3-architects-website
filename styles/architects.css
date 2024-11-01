@@ -166,6 +166,15 @@ button {
     justify-content: space-evenly;
 }
 
+/* Footer section style */
+.footer {
+    margin: 200px 150px;
+    background-color: beige;
+    padding: 50px 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* responsive Style */
 
@@ -210,6 +219,11 @@ button {
         margin: 30px auto;
         width: 100%;
     }
+
+    .footer {
+        width: 100%;
+        margin: 100px 0px;
+    }
 }
 
 @media screen and (min-width: 577px) and (max-width:768px) {
@@ -249,5 +263,10 @@ button {
         text-align: center;
         margin: 30px auto;
         width: 100%;
+    }
+
+    .footer {
+        width: 100%;
+        margin: 100px 0px;
     }
 }
