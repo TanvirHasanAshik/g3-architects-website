@@ -2,4 +2,150 @@
 
 * {
     font-family: "Work Sans", sans-serif;
+    margin: 0;
+}
+
+.text-light-gray {
+    color: rgb(94, 92, 92);
+}
+
+.btn-primary {
+    border: 0;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.25rem;
+    background-color: rgb(226, 189, 22);
+    border-radius: 5px;
+}
+
+/* Header section style */
+.header-container {
+    background-color: beige;
+    padding: 0 150px;
+}
+
+.header-container nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.header-container nav ul {
+    display: flex;
+
+}
+
+.header-container nav li {
+    list-style: none;
+    padding-left: 30px;
+}
+
+.header-container nav li a {
+    text-decoration: none;
+    color: rgb(73, 62, 62);
+}
+
+.brand-group {
+    text-align: center;
+    margin: 30px auto;
+    width: 750px;
+}
+
+.brand-group h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.brand-group>.btn-primary,
+h1,
+p,
+button {
+    margin-bottom: 30px;
+}
+
+.brand-group-banner img {
+    width: 100%;
+    padding-bottom: 30px;
+
+}
+
+/* Main section style */
+
+.main-container {
+    padding: 0 150px;
+}
+
+.team-container {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.teams-content {
+    margin-left: 40px;
+}
+
+.teams {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* responsive Style */
+
+@media screen and (max-width: 576px) {
+
+    .header-container,
+    .main-container {
+        padding: 0 20px;
+    }
+
+    .header-container nav ul {
+        padding: 0px 0px;
+        text-align: center;
+    }
+
+    .header-container nav,
+    .team-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .teams {
+        grid-template-columns: 1fr;
+    }
+
+    .brand-group {
+        text-align: center;
+        margin: 30px auto;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width:768px) {
+
+    .header-container,
+    .main-container {
+        padding: 0 20px;
+    }
+
+    .header-container nav,
+    .team-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .teams {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .brand-group {
+        text-align: center;
+        margin: 30px auto;
+        width: 100%;
+    }
 }
